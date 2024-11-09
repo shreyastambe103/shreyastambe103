@@ -211,22 +211,48 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-.project-card a {
-    display: inline-block;
-    margin-top: 15px;
-    color: #4CAF50;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+.project-card {
+    background-color: #f4f4f9; /* light background for contrast */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    transition: transform 0.3s, border 0.3s ease; /* smooth transition for scaling and border */
+    border: 2px solid transparent; /* initial border transparent */
+  }
 
-.project-card a:hover {
-    color: #45a049;
-}
+.project-card:hover {
+    border: 2px solid #4CAF50; /* green border color on hover */
+    transform: scale(1.05); /* slight scale effect */
+    cursor: pointer; /* show pointer on hover */
+  }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
+
+.view-project-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: transparent; /* Make background transparent on hover */
+    color: #4CAF50;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  /* Hover effect for the view project button */
+  .view-project-btn:hover {
+    color: white;
+    background-color:#4CAF50; /* Green background color */
+    
+    transform: scale(1.05); /* Slight scale effect on hover */
+    cursor: pointer;
+  }
+
 
 /* Contact & Footer Combined */
 #contact-footer {
@@ -290,6 +316,27 @@ footer p {
         width: 80%;
         margin-bottom: 20px;
     }
+
+    .view-project-btn {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        color: white;
+        background-color: #00ff85; /* Green background color */
+        border: 2px solid #00ff85;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s, transform 0.3s;
+      }
+      
+      /* Hover effect for the view project button */
+      .view-project-btn:hover {
+        background-color: transparent; /* Make background transparent on hover */
+        color: #00ff85; /* Green text color on hover */
+        transform: scale(1.05); /* Slight scale effect on hover */
+        cursor: pointer;
+      }
 
     #about, #skills, #projects, #contact-footer {
         margin: 0 10%;
